@@ -10,6 +10,23 @@
 
 </head>
 <body>
+
+    <?php 
+        $faqs = [
+            [
+                "question" => "title",
+                "answer" => "lorem ipsum dolor sit amet"
+            ],
+            [
+                "question" => "title",
+                "answer" => "lorem ipsum dolor sit amet"
+            ],
+            [
+                "question" => "title",
+                "answer" => "lorem ipsum dolor sit amet"
+            ],
+        ];
+    ?>
     
     <header>
         <div class="d-flex justify-content-between align-items-center p-2 border-bottom position-fixed top-0 start-0 end-0 bg-white">
@@ -26,6 +43,15 @@
 
     <main class="mt-5 p-4">
         
+        <ul class="list-unstyled">
+            <?php foreach($faqs as $faq) { ?>
+                <li>
+                    <h2><?php echo $faq['question']; ?></h2>
+                    <p><?php echo $faq['answer']; ?></p>
+                </li>
+            <?php }; ?>
+        </ul>
+
     </main>
 
     <footer class="d-flex justify-content-between align-items-center bg-secondary">
