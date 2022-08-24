@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ - Privacy & Terms - Google</title>
 
+    <!-- Bootstrap 5.0.2 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
@@ -83,11 +87,11 @@
     <header>
         <div class="d-flex justify-content-between align-items-center p-2 border-bottom position-fixed top-0 start-0 end-0 bg-white">
             <div>
-                <span>[-]</span>
+                <span><i class="fa-solid fa-bars"></i></span>
                 <span>FAQ</span>
             </div>
             <div>
-                <span>[:]</span>
+                <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
                 <button class="btn btn-primary">Sign in</button>
             </div>
         </div>
@@ -97,7 +101,7 @@
         
         <ul class="list-unstyled">
             <?php foreach($faqs as $faq) { ?>
-                <li>
+                <li class="mb-5">
                     <h2 class="mb-4"><?php echo $faq['question']; ?></h2>
                     <p><?php echo $faq['answer']; ?></p>
                 </li>
@@ -106,15 +110,15 @@
 
     </main>
 
-    <footer class="d-flex justify-content-between align-items-center bg-secondary">
-        <ul class="list-unstyled d-flex justify-content-around align-items-center">
-            <li>Google</li>
-            <li>About Google</li>
-            <li>Privacy</li>
-            <li>Privacy</li>
+    <footer class="d-flex justify-content-between align-items-center bg-light p-4 pt-1 pb-1">
+        <ul class="d-flex justify-content-around align-items-center list-unstyled gap-3">
+            <li><a href="" class="text-decoration-none text-secondary">Google</a></li>
+            <li><a href="" class="text-decoration-none text-secondary">About Google</a></li>
+            <li><a href="" class="text-decoration-none text-secondary">Privacy</a></li>
+            <li><a href="" class="text-decoration-none text-secondary">Terms</a></li>
         </ul>
         <div>
-            <span>[-]</span>
+            <span><i class="fa-solid fa-globe"></i></span>
             <select name="" id="">
                 <option value="">Language</option>
                 <option value="">Language</option>
